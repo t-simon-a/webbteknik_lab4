@@ -1,0 +1,38 @@
+@media print {
+    #header,
+    #nav-bar,
+    #snowlogo-cont,
+    #snowlogo,
+    #footer,
+    #signpost-up-1,
+    #signpost-down-1,
+    #lightning-bolt,
+    #nav-info {
+        display: none;
+    }
+
+    .page-main {
+        margin-top: 10rem;
+    }
+
+    #next-concert {
+        height: auto;
+        padding: 1rem;
+        border: none;
+    }
+
+    #concert-sign {
+        width: 90%;
+        margin-top: 20rem;
+        font-size: 1rem;
+        height: auto;
+    }
+
+    #concert-list {
+        width: 90%;
+        font-size: 1.2rem;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+    }
+}

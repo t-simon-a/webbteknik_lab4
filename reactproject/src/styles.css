@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Tratex';
+    src: url('fonts/tratex_win/TratexVit/TratexVit.ttf');
+}
+
+body {
+    background-color: #318153;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden
+}
+
+main {
+    flex: 1;
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+#header {
+    background-color: #DC7B1C;
+    padding-top: 0px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#site-logo {
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.2s ease;
+    overflow: hidden;
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 8px;
+}
+
+#site-logo.hidden {
+    max-height: 0;
+    padding: 0;
+    opacity: 0;
+    margin-top: 0px;
+}
+
+h1 {
+    font-family: 'Tratex', sans-serif;
+    font-size: 2.5rem;
+    background-color: #005192;
+    width: 95%;
+    max-width: 67rem;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    color: white;
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+h1:hover {
+    background-color: #004882;
+}
+
+#logo-text {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+}
+
+#nav-bar {
+    font-family: 'Tratex', sans-serif;
+    font-size: 1.25rem;
+    display: flex;
+    align-items:center;
+    height: 6rem;
+    color: white;
+    border-bottom: 0.5rem solid #644200;
+}
+
+#nav-bar ul {
+    display: flex;
+    width: 95%;
+    max-width: 68rem;
+    margin: 0 auto;
+}
+
+#nav-bar li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #003D74;
+    border-width: 0.4rem;
+    border-style: solid;
+    border-radius: 0.6rem;
+    margin: 0.2rem;
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+}
+
+#nav-links,
+#nav-info {
+  overflow: visible;
+}
+
+#nav-info li {
+    display: flex;
+    justify-content: center;
+    background-color: #003D74;
+    border-width: 0.4rem;
+    border-style: solid;
+    border-radius: 0.6rem;
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    height: 30rem;
+    background-color: #318153;
+}
+
+#footer-image {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 1;
+    height: 30rem;
+}
+
+#snowfooter {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#snowfootlogo {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 18rem;
+}
+
+#footer-logo-text-1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7em;
+    z-index: 2;
+    position: absolute;
+    bottom: 4.5rem;
+    text-align: center;
+}
+
+#footer-logo-text-2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7em;
+    z-index: 2;
+    position: absolute;
+    bottom: 2.7rem;
+    text-align: center;
+}
+
+#footer-logo-text-3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    z-index: 2;
+    position: absolute;
+    bottom: 2.4rem;
+    text-align: center;
+}
+
+#hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  background: #003D74;
+  border: 0.3rem solid white;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  margin: 0.5rem auto;
+  width: 3.2rem;
+  height: 3.2rem;
+  box-sizing: border-box;
+}
+
+#hamburger span {
+  display: block;
+  width: 1.6rem;
+  height: 0.2rem;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#hamburger.open span:nth-child(1) {
+  transform: translateY(0.6rem) rotate(45deg);
+}
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+#hamburger.open span:nth-child(3) {
+  transform: translateY(-0.6rem) rotate(-45deg);
+}
+
+/* Mobile ≤768px */
+@media (max-width: 768px) {
+  #hamburger {
+    display: flex;
+  }
+
+  #nav-bar {
+    height: auto;
+    padding: 0.4rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 95%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    gap: 0.3rem;
+  }
+
+  #nav-links li {
+    margin: 0.15rem 0;
+  }
+    h1 {
+        font-size: 1.2rem;
+        border-width: 0.3rem;
+    }
+
+    #nav-bar {
+        height: auto;
+        padding: 0.4rem 0;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        width: 95%;
+        padding: 0 0.5rem;
+        box-sizing: border-box;
+        gap: 0.3rem;
+    }
+
+    #nav-bar li {
+        margin: 0.15rem 0;
+    }
+
+    #footer {
+        height: 20rem;
+    }
+
+    #footer-image {
+        height: 20rem;
+    }
+
+    #snowfootlogo {
+        width: 12rem;
+    }
+
+    #footer-logo-text-1 {
+        font-size: 1.2em;
+        bottom: 3.2rem;
+    }
+
+    #footer-logo-text-2 {
+        font-size: 1.2em;
+        bottom: 1.8rem;
+    }
+
+    #footer-logo-text-3 {
+        font-size: 0.8em;
+        bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,145 @@
+#articles {
+    height: fit-content;
+    width: 95%;
+    max-width: 67rem;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.collapsible {
+    display: block;
+    font-family: 'Tratex', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    color: #ffffff;
+    background: #005192;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: #ffffff;
+    border-radius: 7px;
+    transition: border-radius 0.1s ease-out;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.collapsible::after {
+    content: '▼';
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform 0.2s ease-out;
+    font-size: 1.2rem;
+}
+
+.collapsible.active::after {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.collapsible:hover {
+    background: #004882;
+}
+
+.collapsible.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.content {
+    padding: 0 18px;
+    background-color: rgba(250, 224, 66, 0.2);
+    margin-bottom: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.content-inner {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.content-inner h2 {
+    text-align: center;
+}
+
+.content-inner p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.content-inner li {
+    list-style: circle;
+    margin-left: 6rem;
+}
+
+#nostalgia-button {
+    text-align: center;
+    background-color: #005192;
+    width: 10rem;
+    margin: 0 auto 2rem auto;
+    padding: 0.75rem 1rem;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0.4rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+}
+
+#nostalgia-button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Tratex', sans-serif;
+    font-size: 1.2rem;
+}
+
+#nostalgia-button:hover {
+    background-color: #004882;
+}
+
+/* Mobile ≤768px */
+@media (max-width: 768px) {
+    #articles {
+        padding-top: 1.5rem;
+        width: 100%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .collapsible {
+        font-size: 1.2rem;
+        padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    }
+
+    .collapsible::after {
+        right: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .content-inner {
+        font-size: 0.95rem;
+    }
+
+    .content-inner p {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .content-inner li {
+        margin-left: 1.5rem;
+    }
+
+    #nostalgia-button {
+        width: 8rem;
+    }
+
+    #nostalgia-button a {
+        font-size: 1rem;
+    }
+}

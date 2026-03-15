@@ -1,0 +1,230 @@
+.page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 10rem;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 50rem;
+    height: auto;
+    background-image: url('/images/start_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.page-info {
+    margin-top: -4rem;
+    color: white;
+    border-radius: 2rem;
+    max-width: 40rem;
+    min-height: 25rem;
+    padding: 2rem;
+    background: rgba(220, 123, 28, 0.81);
+    backdrop-filter: blur(2px);
+}
+
+.info-heading {
+    font-family: 'Tratex', sans-serif;
+    text-align: center;
+}
+
+.info-text {
+    font-family: Verdana, sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#nav-info {
+    font-family: 'Tratex', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-info li {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    margin: 1rem;
+}
+
+#snowlogo-cont {
+    display: flex;
+    margin-top: -4rem;
+}
+
+#snowlogo {
+    max-width: 100%;
+    max-height: 25rem;
+}
+
+
+#next-concert {
+    border-top: 0.5rem solid #644200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: #318153;
+    position: relative;
+    min-height: 50rem;
+    height: auto;
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+}
+
+#concert-sign {
+    z-index: 1;
+    margin-top: -6.3rem;
+    display: flex;
+    align-items: center;       
+    justify-content: center;   
+    gap: 1rem;                 
+    font-family: 'Tratex', sans-serif;
+    font-size: 2.3rem;
+    background-color: #FFBD31;
+    width: 100%;
+    max-width: 60rem;
+    border-style: solid;
+    border-width: 0.75rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border-color: #F70829;
+    min-height: 5rem;
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+}
+
+#concert-text {
+    margin: 0;   
+}
+
+#lightning-bolt {
+    height: 6rem;   
+    width: auto;
+    flex-shrink: 0;
+}
+
+#concert-list {
+    z-index: 1;
+    font-family: 'Tratex', sans-serif;
+    font-size: 3rem;
+    background-color: #005192;
+    width: 100%;
+    max-width: 60rem;
+    border-style: solid;
+    border-width: 0.75rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    line-height: 6rem;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+#signpost-up-1 {
+    height:1rem;
+    width:2rem;
+    background-color: rgb(173, 173, 173);
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+}
+
+#signpost-down-1 {
+    z-index: 1;
+    height:40rem;
+    width:2rem;
+    margin-bottom: -5rem;
+    background-color: rgb(173, 173, 173);
+    box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile ≤768px */
+@media (max-width: 768px) {
+    .page-main {
+        flex-direction: column;
+        min-height: auto;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .page-info {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 0;
+        box-sizing: border-box;
+        min-height: auto;
+    }
+
+    .info-text {
+        font-size: 1rem;
+    }
+
+    #nav-info {
+        font-size: 1.1rem;
+    }
+
+    #nav-info li {
+        width: auto;
+        flex: 1;
+        margin: 0.5rem;
+    }
+
+    #snowlogo-cont {
+        margin-top: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #snowlogo {
+        max-height: 15rem;
+        width: auto;
+    }
+
+    #next-concert {
+        min-height: auto;
+        padding: 2rem 1rem 4rem;
+    }
+
+    #concert-sign {
+        font-size: 1.4rem;
+        margin-top: 0;
+        gap: 0.5rem;
+        padding: 0.75rem;
+        border-width: 0.4rem;
+    }
+
+    #lightning-bolt {
+        height: 4rem;
+    }
+
+    #concert-list {
+        font-size: 1.5rem;
+        border-width: 0.4rem;
+        padding: 0.75rem;
+    }
+
+    tr {
+        line-height: 3.5rem;
+    }
+
+    #signpost-down-1 {
+        height: 20rem;
+    }
+}
