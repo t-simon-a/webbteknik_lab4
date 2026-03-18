@@ -1,4 +1,4 @@
-.page-main {
+.member .page-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
     background-position: center;
 }
 
-.page-info {
+.member .page-info {
     font-family: Verdana, sans-serif;
     font-size: 1.5rem;
     color: white;
@@ -27,13 +27,13 @@
     backdrop-filter: blur(2px);
 }
 
-.info-heading {
+.member .info-heading {
     font-size: 2rem;
     font-family: 'Tratex', sans-serif;
     text-align: center;
 }
 
-.info-text {
+.member .info-text {
     font-family: Verdana, sans-serif;
     text-align: left;
     margin-left: 2rem;
@@ -75,22 +75,22 @@
 
 /* Mobile ≤768px */
 @media (max-width: 768px) {
-    .page-main {
+    .member .page-main {
         padding: 1.5rem 1rem;
         min-height: auto;
     }
 
-    .page-info {
+    .member .page-info {
         width: 100%;
         min-height: auto;
         font-size: 1rem;
     }
 
-    .info-heading {
+    .member .info-heading {
         font-size: 1.5rem;
     }
 
-    .info-text {
+    .member .info-text {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }

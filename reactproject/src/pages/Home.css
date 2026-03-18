@@ -1,4 +1,4 @@
-.page-main {
+.home .page-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
     background-position: center;
 }
 
-.page-info {
+.home .page-info {
     margin-top: -4rem;
     color: white;
     border-radius: 2rem;
@@ -24,12 +24,12 @@
     backdrop-filter: blur(2px);
 }
 
-.info-heading {
+.home .info-heading {
     font-family: 'Tratex', sans-serif;
     text-align: center;
 }
 
-.info-text {
+.home .info-text {
     font-family: Verdana, sans-serif;
     text-align: left;
     font-size: 1.5rem;
@@ -157,14 +157,14 @@ td:last-child {
 
 /* Mobile ≤768px */
 @media (max-width: 768px) {
-    .page-main {
+    .home .page-main {
         flex-direction: column;
         min-height: auto;
         padding: 2rem 1rem;
         gap: 1.5rem;
     }
 
-    .page-info {
+    .home .page-info {
         max-width: 100%;
         width: 100%;
         margin-top: 0;
@@ -172,7 +172,7 @@ td:last-child {
         min-height: auto;
     }
 
-    .info-text {
+    .home .info-text {
         font-size: 1rem;
     }
 

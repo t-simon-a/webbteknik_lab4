@@ -1,4 +1,4 @@
-.page-main {
+.contact .page-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
     background-position: center;
 }
 
-.page-info {
+.contact .page-info {
     color: white;
     width: 95%;
     max-width: 65rem;
@@ -25,7 +25,7 @@
     backdrop-filter: blur(2px);
 }
 
-.info-heading {
+.contact .info-heading {
     font-size: 2rem;
     font-family: 'Tratex', sans-serif;
     text-align: center;
@@ -129,17 +129,17 @@
 
 /* Mobile ≤768px */
 @media (max-width: 768px) {
-    .page-main {
+    .contact .page-main {
         padding: 1.5rem 1rem;
         min-height: auto;
     }
 
-    .page-info {
+    .contact .page-info {
         width: 100%;
         min-height: auto;
     }
 
-    .info-heading {
+    .contact .info-heading {
         font-size: 1.5rem;
     }
 
@@ -147,7 +147,7 @@
         font-size: 1.2rem;
     }
 
-    .info-text {
+    .contact .info-text {
         font-size: 1rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;

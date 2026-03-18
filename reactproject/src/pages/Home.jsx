@@ -9,7 +9,7 @@ const concerts = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="home">
       <div className="page-main">
         <section className="page-info">
           <h2 className="info-heading">Södra Sveriges snyggaste studentorkester!</h2>

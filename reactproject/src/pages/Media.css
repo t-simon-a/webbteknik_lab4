@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.snow-video {
+.media .snow-video {
     border: 2rem solid #1f5838;
     border-radius: 2rem;
     box-shadow: 0 2.113px 2.113px 0 rgba(0, 0, 0, 0.25);
@@ -18,7 +18,7 @@
 
 * {box-sizing:border-box}
 
-.slideshow-container {
+.media .slideshow-container {
     max-width: 1000px;
     position: relative;
     border: 2rem solid #1f5838;
@@ -28,11 +28,11 @@
     margin-top: -7rem;
 }
 
-.slides {
+.media .slides {
     display: none;
 }
 
-.prev, .next {
+.media .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -47,16 +47,16 @@
     user-select: none;
 }
 
-.next {
+.media .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.media .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-.text {
+.media .text {
     background-color: rgba(0,0,0,0.7);
     color: #f2f2f2;
     font-size: 15px;
@@ -67,7 +67,7 @@
     text-align: center;
 }
 
-.numbertext {
+.media .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -81,7 +81,7 @@
     margin-bottom: 10rem;
 }
 
-.dot {
+.media .dot {
     z-index: 100;
     cursor: pointer;
     height: 15px;
@@ -93,11 +93,11 @@
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.media .active, .dot:hover {
     background-color: #717171;
 }
 
-.fade {
+.media .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
@@ -113,12 +113,12 @@
         padding: 2rem 0.75rem 5rem 0.75rem;
     }
 
-    .slideshow-container {
+    .media .slideshow-container {
         border-width: 0.75rem;
         border-radius: 1rem;
     }
 
-    .snow-video {
+    .media .snow-video {
         border-width: 0.75rem;
         border-radius: 1rem;
     }
