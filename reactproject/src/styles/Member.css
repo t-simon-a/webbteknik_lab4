@@ -8,7 +8,7 @@
     width: 100%;
     min-height: 50rem;
     height: auto;
-    background-image: url('images/medlemsbild.jpg');
+    background-image: url('/images/medlemsbild.jpg');
     background-size: cover;
     background-position: center;
 }
