@@ -1,4 +1,4 @@
-import './Member.css'
+import '../styles/Member.css'
     
 export default function About() {
     return(

@@ -1,4 +1,4 @@
-import './About.css'
+import '../styles/About.css'
 import Collapsible from '../components/Collapsible'
 
 export default function About() {

@@ -1,4 +1,4 @@
-import './Home.css'
+import '../styles/Home.css'
 
 const concerts = [
   { name: 'Uniaden', date: '27-1' },

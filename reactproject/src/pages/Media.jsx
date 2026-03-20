@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Media.css';
+import '../styles/Media.css';
 
 export default function Media() {
     const [slideIndex, setSlideIndex] = useState(0);

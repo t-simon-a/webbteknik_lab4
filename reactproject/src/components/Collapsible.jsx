@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../pages/About.css';
+import '../styles/About.css';
 
 export default function Collapsible({ title, children }) {
     const [isOpen, setIsOpen] = useState(false)
