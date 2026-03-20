@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Tratex';
-    src: url('fonts/tratex_win/TratexVit/TratexVit.ttf');
+    src: url('/fonts/tratex_win/TratexVit/TratexVit.ttf');
 }
 
 body {
