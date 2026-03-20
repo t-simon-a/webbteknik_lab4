@@ -16,7 +16,7 @@
     height: auto;
 }
 
-* {box-sizing:border-box}
+.media * {box-sizing:border-box}
 
 .media .slideshow-container {
     max-width: 1000px;
